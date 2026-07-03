@@ -1728,6 +1728,12 @@ textarea {
   text-transform: uppercase;
 }
 
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
 .footer-links a,
 .center-list a {
   color: rgba(255, 255, 255, 0.8);
