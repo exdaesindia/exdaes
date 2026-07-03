@@ -1339,10 +1339,28 @@ textarea {
 }
 
 .flag-georgia {
+  position: relative;
   background:
-    linear-gradient(90deg, transparent 0 43%, #d6232a 43% 57%, transparent 57% 100%),
-    linear-gradient(180deg, transparent 0 43%, #d6232a 43% 57%, transparent 57% 100%),
+    linear-gradient(90deg, transparent 0 42%, #e3122d 42% 58%, transparent 58% 100%),
+    linear-gradient(180deg, transparent 0 42%, #e3122d 42% 58%, transparent 58% 100%),
     #fff;
+}
+
+.flag-georgia::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background:
+    linear-gradient(90deg, transparent 0 38%, #e3122d 38% 62%, transparent 62% 100%),
+    linear-gradient(180deg, transparent 0 38%, #e3122d 38% 62%, transparent 62% 100%),
+    #fff;
+  left: 8px;
+  top: 5px;
+  box-shadow:
+    17px 0 0 0 #fff,
+    0 14px 0 0 #fff,
+    17px 14px 0 0 #fff;
 }
 
 .flag-russia {
@@ -1356,20 +1374,102 @@ textarea {
 }
 
 .flag-nepal {
+  position: relative;
   background:
-    linear-gradient(135deg, #dc202c 0 72%, transparent 72% 100%),
+    polygon(0 0, 72% 0, 46% 50%, 72% 100%, 0 100%),
     #003893;
+  clip-path: polygon(0 0, 72% 0, 46% 50%, 72% 100%, 0 100%);
+}
+
+.flag-nepal::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #dc143c;
+  clip-path: polygon(0 0, 68% 0, 42% 50%, 68% 100%, 0 100%);
+}
+
+.flag-nepal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 28% 31%, #fff 0 10%, transparent 11% 100%),
+    radial-gradient(circle at 28% 73%, #fff 0 12%, transparent 13% 100%);
 }
 
 .flag-uzbekistan {
+  position: relative;
   background:
-    linear-gradient(180deg, #00a8e8 0 30%, #d61f33 30% 34%, #ffffff 34% 66%, #d61f33 66% 70%, #1c9b53 70% 100%);
+    linear-gradient(180deg, #3f82e0 0 33%, #d61f33 33% 36%, #ffffff 36% 64%, #d61f33 64% 67%, #2f8f3a 67% 100%);
+}
+
+.flag-uzbekistan::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  box-shadow: inset 5px 0 0 0 #fff;
+}
+
+.flag-uzbekistan::after {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 4px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:
+    7px 0 0 #fff,
+    14px 0 0 #fff,
+    3.5px 6px 0 #fff,
+    10.5px 6px 0 #fff,
+    17.5px 6px 0 #fff,
+    0 12px 0 #fff,
+    7px 12px 0 #fff,
+    14px 12px 0 #fff,
+    21px 12px 0 #fff;
 }
 
 .flag-kyrgyzstan {
+  position: relative;
+  background: #e01e27;
+}
+
+.flag-kyrgyzstan::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   background:
-    radial-gradient(circle at 50% 50%, #ffd100 0 24%, transparent 25% 100%),
-    #e01e27;
+    radial-gradient(circle at center, #ffd100 0 38%, transparent 39% 100%),
+    repeating-conic-gradient(from 0deg, #ffd100 0deg 10deg, transparent 10deg 20deg);
+}
+
+.flag-kyrgyzstan::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg, transparent 44%, #e01e27 44% 56%, transparent 56%),
+    linear-gradient(90deg, transparent 44%, #e01e27 44% 56%, transparent 56%),
+    linear-gradient(45deg, transparent 46%, #e01e27 46% 54%, transparent 54%),
+    linear-gradient(-45deg, transparent 46%, #e01e27 46% 54%, transparent 54%),
+    #ffd100;
 }
 
 .flag-vietnam {
@@ -1563,6 +1663,69 @@ textarea {
 .footer-label {
   color: #fff;
   font-weight: 700;
+}
+
+.footer-social {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.footer-social-title {
+  margin: 0;
+  color: #efb735;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 278px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.social-pill:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.24);
+}
+
+.social-pill-instagram {
+  background: linear-gradient(90deg, #ff8a00, #e52e71 55%, #a336ff);
+}
+
+.social-pill-facebook {
+  background: linear-gradient(90deg, #1f6fff, #3579f6);
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 
 .footer-links a,
