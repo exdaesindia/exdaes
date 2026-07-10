@@ -1,26 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap");
 
 :root {
-  --bg: #f3f6fc;
+  --bg: #f5f7fb;
   --surface: #ffffff;
-  --surface-alt: #ebf1fb;
-  --surface-soft: #fbfdff;
-  --text: #112746;
-  --muted: #5d6f89;
-  --line: #d6e0ef;
-  --primary: #144f9f;
-  --primary-dark: #0b2343;
-  --primary-soft: #e5efff;
-  --accent: #efb735;
-  --accent-deep: #d69814;
-  --danger: #df5a45;
-  --danger-deep: #b1181d;
-  --success: #21a65d;
-  --footer: #08111f;
-  --shadow: 0 28px 70px rgba(7, 26, 58, 0.14);
-  --shadow-soft: 0 18px 38px rgba(13, 37, 78, 0.08);
-  --radius: 28px;
-  --radius-sm: 16px;
+  --surface-alt: #eef2f8;
+  --surface-soft: #fbfcfe;
+  --text: #0e1a2b;
+  --muted: #5c6d84;
+  --line: #dfe6f0;
+  --primary: #1247a5;
+  --primary-dark: #081528;
+  --primary-soft: #e8f0ff;
+  --accent: #c9972e;
+  --accent-deep: #a67c1f;
+  --accent-light: #f7efd9;
+  --danger: #d94a38;
+  --danger-deep: #a8161c;
+  --success: #1a9d57;
+  --footer: #060d18;
+  --shadow: 0 24px 60px rgba(8, 21, 40, 0.1);
+  --shadow-soft: 0 12px 32px rgba(8, 21, 40, 0.06);
+  --shadow-card: 0 1px 2px rgba(8, 21, 40, 0.04), 0 8px 24px rgba(8, 21, 40, 0.06);
+  --radius: 20px;
+  --radius-sm: 12px;
+  --radius-lg: 28px;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
 * {
@@ -33,12 +38,17 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
   color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   background:
-    radial-gradient(circle at top left, rgba(20, 79, 159, 0.08), transparent 22%),
-    radial-gradient(circle at 100% 10%, rgba(239, 183, 53, 0.08), transparent 18%),
-    linear-gradient(180deg, #fbfdff 0%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(18, 71, 165, 0.05), transparent 24%),
+    radial-gradient(circle at 100% 8%, rgba(201, 151, 46, 0.05), transparent 20%),
+    linear-gradient(180deg, #fcfdfe 0%, var(--bg) 100%);
 }
 
 img {
@@ -118,7 +128,7 @@ a {
 .nav-links a {
   text-decoration: none;
   color: var(--primary-dark);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -216,7 +226,7 @@ a {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
@@ -226,7 +236,7 @@ a {
 .hero h1,
 .page-hero h1 {
   margin: 0 0 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: clamp(38px, 4.8vw, 60px);
   line-height: 0.98;
   letter-spacing: -0.03em;
@@ -299,7 +309,7 @@ a {
 .center-card h3,
 .stat-card h3 {
   margin: 0 0 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .hero-card h2,
@@ -460,7 +470,7 @@ a {
   border-radius: 18px;
   background: linear-gradient(135deg, #eff5ff, #f8fbff);
   color: var(--primary-dark);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
   box-shadow: inset 0 0 0 1px rgba(20, 79, 159, 0.08);
 }
@@ -482,7 +492,7 @@ textarea {
   padding: 13px 24px;
   border-radius: 999px;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 0.01em;
   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
@@ -540,7 +550,7 @@ textarea {
 .number {
   display: block;
   margin-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 30px;
   font-weight: 800;
   color: var(--primary-dark);
@@ -674,7 +684,7 @@ textarea {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.14);
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -708,7 +718,7 @@ textarea {
 
 .course-group h3 {
   margin: 0 0 6px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 34px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -730,7 +740,7 @@ textarea {
   border-radius: 22px;
   background: linear-gradient(135deg, #eff5ff, #fff7df);
   color: var(--primary-dark);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 34px;
   font-weight: 800;
   line-height: 1;
@@ -825,7 +835,7 @@ textarea {
 
 .course-closing h3 {
   margin: 0 0 8px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
@@ -855,7 +865,7 @@ textarea {
 
 .course-lead-copy h2 {
   margin: 0 0 12px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: clamp(28px, 3vw, 40px);
   font-weight: 700;
   line-height: 1.08;
@@ -929,7 +939,7 @@ textarea {
 
 .course-guide-copy h2 {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: clamp(28px, 3vw, 38px);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -974,7 +984,7 @@ textarea {
 
 .visual-panel h3 {
   margin: 0 0 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -990,7 +1000,7 @@ textarea {
   display: inline-block;
   margin-bottom: 12px;
   color: var(--primary);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -1018,7 +1028,7 @@ textarea {
 .mini-tile strong {
   display: block;
   margin-bottom: 6px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
@@ -1044,7 +1054,7 @@ textarea {
   border-radius: 999px;
   background: rgba(15, 78, 168, 0.08);
   color: var(--primary-dark);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
 }
@@ -1076,7 +1086,7 @@ textarea {
 .metric-chip strong {
   display: block;
   margin-bottom: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
@@ -1099,7 +1109,7 @@ textarea {
 }
 
 .mini-banner strong {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .trust-section {
@@ -1124,7 +1134,7 @@ textarea {
 .trust-pill strong {
   display: block;
   margin-bottom: 8px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
   color: var(--primary-dark);
 }
@@ -1175,7 +1185,7 @@ textarea {
 .review-card strong {
   display: block;
   margin-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 20px;
   color: var(--primary-dark);
 }
@@ -1190,6 +1200,10 @@ textarea {
   margin: 0 0 18px;
 }
 
+/* Ensure footer social SVG icons size correctly */
+.footer-social .social-icon svg { width:20px; height:20px; display:block }
+
+
 .review-badge {
   display: inline-flex;
   margin-bottom: 16px;
@@ -1197,7 +1211,7 @@ textarea {
   border-radius: 999px;
   background: rgba(20, 79, 159, 0.08);
   color: var(--primary-dark);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -1293,7 +1307,7 @@ textarea {
   border-radius: 999px;
   background: var(--country-pill-bg);
   color: var(--primary-dark);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -1340,27 +1354,30 @@ textarea {
 
 .flag-georgia {
   position: relative;
-  background:
-    linear-gradient(90deg, transparent 0 42%, #e3122d 42% 58%, transparent 58% 100%),
-    linear-gradient(180deg, transparent 0 42%, #e3122d 42% 58%, transparent 58% 100%),
-    #fff;
+  background: #fff;
 }
 
 .flag-georgia::before {
   content: "";
   position: absolute;
-  width: 9px;
-  height: 9px;
+  inset: 0;
   background:
-    linear-gradient(90deg, transparent 0 38%, #e3122d 38% 62%, transparent 62% 100%),
-    linear-gradient(180deg, transparent 0 38%, #e3122d 38% 62%, transparent 62% 100%),
-    #fff;
-  left: 8px;
-  top: 5px;
+    linear-gradient(90deg, transparent 0 45%, #e3122d 45% 55%, transparent 55% 100%),
+    linear-gradient(180deg, transparent 0 45%, #e3122d 45% 55%, transparent 55% 100%);
+}
+
+.flag-georgia::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  background: #e3122d;
   box-shadow:
-    17px 0 0 0 #fff,
-    0 14px 0 0 #fff,
-    17px 14px 0 0 #fff;
+    22px 0 0 #e3122d,
+    0 10px 0 #e3122d,
+    22px 10px 0 #e3122d;
 }
 
 .flag-russia {
@@ -1375,65 +1392,57 @@ textarea {
 
 .flag-nepal {
   position: relative;
-  background:
-    polygon(0 0, 72% 0, 46% 50%, 72% 100%, 0 100%),
-    #003893;
-  clip-path: polygon(0 0, 72% 0, 46% 50%, 72% 100%, 0 100%);
+  background: #dc143c;
+  clip-path: polygon(0 0, 65% 0, 45% 50%, 65% 100%, 0 100%);
 }
 
 .flag-nepal::before {
   content: "";
   position: absolute;
   inset: 2px;
-  background: #dc143c;
-  clip-path: polygon(0 0, 68% 0, 42% 50%, 68% 100%, 0 100%);
+  background: #003893;
+  clip-path: polygon(0 0, 60% 0, 40% 50%, 60% 100%, 0 100%);
 }
 
 .flag-nepal::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 28% 31%, #fff 0 10%, transparent 11% 100%),
-    radial-gradient(circle at 28% 73%, #fff 0 12%, transparent 13% 100%);
+  left: 8px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #fff 0 40%, transparent 41% 100%);
+  box-shadow: 0 8px 0 0 radial-gradient(circle, #fff 0 40%, transparent 41% 100%);
 }
 
 .flag-uzbekistan {
   position: relative;
   background:
-    linear-gradient(180deg, #3f82e0 0 33%, #d61f33 33% 36%, #ffffff 36% 64%, #d61f33 64% 67%, #2f8f3a 67% 100%);
+    linear-gradient(180deg, #0099b5 0 33%, #fff 33% 66%, #0099b5 66% 100%);
 }
 
 .flag-uzbekistan::before {
   content: "";
   position: absolute;
-  left: 6px;
-  top: 4px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  box-shadow: inset 5px 0 0 0 #fff;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    linear-gradient(90deg, #ce1126 0 4px, transparent 4px calc(100% - 4px), #ce1126 calc(100% - 4px) 100%);
 }
 
 .flag-uzbekistan::after {
   content: "";
   position: absolute;
-  left: 21px;
-  top: 4px;
-  width: 3px;
-  height: 3px;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #fff;
-  box-shadow:
-    7px 0 0 #fff,
-    14px 0 0 #fff,
-    3.5px 6px 0 #fff,
-    10.5px 6px 0 #fff,
-    17.5px 6px 0 #fff,
-    0 12px 0 #fff,
-    7px 12px 0 #fff,
-    14px 12px 0 #fff,
-    21px 12px 0 #fff;
+  box-shadow: 12px 0 0 2px #fff;
 }
 
 .flag-kyrgyzstan {
@@ -1446,13 +1455,12 @@ textarea {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 16px;
-  height: 16px;
   transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  background:
-    radial-gradient(circle at center, #ffd100 0 38%, transparent 39% 100%),
-    repeating-conic-gradient(from 0deg, #ffd100 0deg 10deg, transparent 10deg 20deg);
+  background: radial-gradient(circle, #ffd100 0 35%, transparent 36% 100%);
+  box-shadow: 0 0 0 2px #ffd100;
 }
 
 .flag-kyrgyzstan::after {
@@ -1460,16 +1468,11 @@ textarea {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 9px;
-  height: 9px;
   transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background:
-    linear-gradient(0deg, transparent 44%, #e01e27 44% 56%, transparent 56%),
-    linear-gradient(90deg, transparent 44%, #e01e27 44% 56%, transparent 56%),
-    linear-gradient(45deg, transparent 46%, #e01e27 46% 54%, transparent 54%),
-    linear-gradient(-45deg, transparent 46%, #e01e27 46% 54%, transparent 54%),
-    #ffd100;
+  background: #e01e27;
 }
 
 .flag-vietnam {
@@ -1497,7 +1500,7 @@ textarea {
 .abroad-country-top strong,
 .country-detail-card h3,
 .abroad-cta-panel strong {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--primary-dark);
 }
 
@@ -1527,7 +1530,7 @@ textarea {
   border-radius: 999px;
   background: var(--country-meta-bg);
   color: var(--primary-dark);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
 }
@@ -1655,7 +1658,7 @@ textarea {
 
 .site-footer h3 {
   margin: 0 0 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
   color: #efb735;
 }
@@ -1674,7 +1677,7 @@ textarea {
 .footer-social-title {
   margin: 0;
   color: #efb735;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -1690,7 +1693,7 @@ textarea {
   padding: 12px 16px;
   border-radius: 14px;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -1814,7 +1817,7 @@ textarea {
   border-radius: 16px;
   text-align: center;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
   background: #fff;
   color: var(--primary-dark);
